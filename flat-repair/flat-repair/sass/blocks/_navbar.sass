@@ -1,0 +1,48 @@
+.navbar
+  padding: 8px 0px
+  &-block
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__info
+    display: flex
+    align-items: center 
+    text-align: right
+  &__address
+    flex-direction: column 
+  &__button
+    margin-left: 30px 
+  &__phone
+    display: inline-block
+    color: $text-color 
+    +big
+    font-size: 20px
+  
+    text-decoration: none
+    margin-top: 10px
+.totop 
+ width: 100px
+ border: 1px solid #ccc
+ background: $main-color
+ text-align: center
+ padding: 5px
+ position: fixed
+ bottom: 10px
+ right: 10px
+ cursor: pointer
+ display: none
+ color:#333
+ font-family: +light
+ font-size: 14px
+ z-index: 2
+ 
+
+@media screen and ( max-width: 768px  )
+  .navbar
+    &__contacts
+      display: none
+    &__button
+      font-size: 12px
+      padding: 15px 26px
+    &__logo
+      width: 90px
