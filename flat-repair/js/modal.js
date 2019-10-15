@@ -152,8 +152,8 @@ $(document).ready(function() {
         success: function (response) {
           console.log('pribili dannie:'+response);
           $('.offer__form')[0].reset();
-          
-          $('.result').text('Спасибо за заявку, скоро мы вам перезвоним.');
+          modal2.addClass ('modal_active');
+          $('.modal-dialog__title').text('Спасибо за заявку, скоро мы вам перезвоним.');
         },
           error: function(jqXHR, textStatus,errorThrown){
             console.log(jqXHR + "" + textStatus )
