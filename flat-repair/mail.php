@@ -48,7 +48,7 @@ if (!empty($_FILES['myfile']['name'][0])) {
         <b>Сообщение:</b><br>$text";
 // Проверяем отравленность сообщения
 if ($mail->send()) {
-  header('location: thanks.html');
+  echo 'forma uspesgno otpravlena';
 } else {
 echo "Сообщение не было отправлено. Неверно указаны настройки вашей почты";
 }

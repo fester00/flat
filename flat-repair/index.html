@@ -105,6 +105,7 @@
             Получить бесплатный дизайн-проект
 
           </button>
+          <div class="result"></div>
         </form>
         <!-- /.form offer__form -->
         <div class="offer-info">
@@ -331,7 +332,7 @@
   <div class="modal" id="modal">
     <div class="modal-dialog">
       <div class="modal-dialog-container">
-        <h3 class="modal-dialog__title">Узнайте точную стоимость
+        <h3 class="modal-dialog__title1">Узнайте точную стоимость
             ремонта по телефону!</h3>
         <span class="modal-dialog__subtitle">Заполните поля ниже - мы свяжемся с Вами</span>
         <div class="modal-form__block">
@@ -356,6 +357,19 @@
           
       </div>
     </div>
+    <div class="modal" id="modal2">
+      <div class="modal-dialog">
+        <div class="modal-dialog-container">
+          <h3 class="modal-dialog__title">Узнайте точную стоимость
+              ремонта по телефону!</h3>
+          
+          
+        
+        <button class="modal-dialog__close" id="close2">&times;</button>
+        </div>
+            
+        </div>
+      </div>
     <!-- /.modal-dialog -->
   </div>
   <!-- /.moadl -->
@@ -369,143 +383,7 @@
   <script src="js/jquery.validate.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
 
-  <script>
-    new WOW().init();
-    $(document).ready(function(){
-      $('#form').validate({
-        errorClass: "invalid",
-        focusInvalid: false,
-        errorElement: "div",
-        rules: {
-          phone: {
-            required: true,
-            
-          },
-          email: {
-            required: true,
-            email: true
-          },
-          username: {
-            required: true,
-            minlength: 2,
-            maxlength: 15
-          }
-        },
-          messages: {
-            username: {
-              required: "Заполните поле",
-              minlength: jQuery.validator.format("Минимум символов: {2}")
-            },
-            phone: {
-            required:  "Заполните поле",
-            
-            },
-            email: {
-            required:  "укажите Ваш Email",
-            email: jQuery.validator.format("Введите корректный email")
-            }
-            
-          }
-        }
-      );
-      $('#form2').validate({
-        errorClass: "invalid",
-        focusInvalid: false,
-        errorElement: "div",
-        rules: {
-          phone: {
-            required: true
-          },
-          email: {
-            required: true,
-            email: true
-          },
-          username: {
-            required: true,
-            minlength: 2,
-            maxlength: 15
-          }
-        },
-        messages: {
-            username: {
-              required: "Заполните поле",
-              minlength: jQuery.validator.format("Минимум символов: {2}")
-            },
-            phone: {
-            required:  "Заполните поле",
-            
-            },
-            email: {
-            required:  "укажите Ваш Email",
-            email: jQuery.validator.format("Введите корректный email")
-            }
-            
-          }
-        }
-      );
-      $('#form3').validate({
-        errorClass: "invalid",
-        focusInvalid: false,
-        errorElement: "div",
-        rules: {
-          phone: {
-            required: true
-          },
-          email: {
-            required: true,
-            email: true
-          },
-          username: {
-            required: true,
-            minlength: 2,
-            maxlength: 15
-          }
-        },
-        messages: {
-            username: {
-              required: "Заполните поле",
-              minlength: jQuery.validator.format("Минимум символов: {2}")
-            },
-            phone: {
-            required:  "Заполните поле",
-            
-            },
-            email: {
-            required:  "укажите Ваш Email",
-            email: jQuery.validator.format("Введите корректный email")
-            }
-            
-          }
-        }
-      );
-      $('.phone').mask('8 (999) 999-99-99');
-      $('.slider').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        prevArrow: $('.arrows__left'),
-        nextArrow: $('.arrows__right'),
-        responsive: [
-        {
-      breakpoint: 1200,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        
-      }
-    },
-    {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        
-      }
-    },
-   
-        ]
-      });
-    });
-  </script>
+ 
    </main>
    <footer class="footer">
      <div class="map" id="map">
